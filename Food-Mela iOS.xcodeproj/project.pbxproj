@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E477C75729BF6D5C00467B6C /* Food_Mela_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */; };
-		E477C75929BF6D5C00467B6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C75829BF6D5C00467B6C /* ContentView.swift */; };
+		E477C75929BF6D5C00467B6C /* FoodMelaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */; };
 		E477C75B29BF6D5E00467B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E477C75A29BF6D5E00467B6C /* Assets.xcassets */; };
 		E477C75E29BF6D5E00467B6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E477C75D29BF6D5E00467B6C /* Preview Assets.xcassets */; };
+		E477C76529BF6F2300467B6C /* FoodMelaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C76429BF6F2300467B6C /* FoodMelaListView.swift */; };
+		E477C76729BF6F4200467B6C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C76629BF6F4200467B6C /* AccountView.swift */; };
+		E477C76929BF6F5200467B6C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C76829BF6F5200467B6C /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E477C75329BF6D5C00467B6C /* Food-Mela iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Mela iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_Mela_iOSApp.swift; sourceTree = "<group>"; };
-		E477C75829BF6D5C00467B6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMelaTabView.swift; sourceTree = "<group>"; };
 		E477C75A29BF6D5E00467B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E477C75D29BF6D5E00467B6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E477C76429BF6F2300467B6C /* FoodMelaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMelaListView.swift; sourceTree = "<group>"; };
+		E477C76629BF6F4200467B6C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E477C76829BF6F5200467B6C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */,
-				E477C75829BF6D5C00467B6C /* ContentView.swift */,
+				E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */,
+				E477C76429BF6F2300467B6C /* FoodMelaListView.swift */,
+				E477C76629BF6F4200467B6C /* AccountView.swift */,
+				E477C76829BF6F5200467B6C /* OrderView.swift */,
 				E477C75A29BF6D5E00467B6C /* Assets.xcassets */,
 				E477C75C29BF6D5E00467B6C /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E477C75929BF6D5C00467B6C /* ContentView.swift in Sources */,
+				E477C76729BF6F4200467B6C /* AccountView.swift in Sources */,
+				E477C76529BF6F2300467B6C /* FoodMelaListView.swift in Sources */,
+				E477C75929BF6D5C00467B6C /* FoodMelaTabView.swift in Sources */,
 				E477C75729BF6D5C00467B6C /* Food_Mela_iOSApp.swift in Sources */,
+				E477C76929BF6F5200467B6C /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

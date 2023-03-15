@@ -31,7 +31,7 @@ struct FoodItem: Decodable, Identifiable {
     }
 }
 
-struct FoodListResponse {
+struct FoodListResponse: Decodable {
     let request: [FoodItem]
 
     enum CodingKeys: String, CodingKey {

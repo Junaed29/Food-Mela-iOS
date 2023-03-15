@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct FoodMelaListView: View {
+    @StateObject var viewModel = FoodMelaListViewModel()
+
     var body: some View {
         NavigationView {
-            List(FoodListResponseMockData.detaItemList) { foodItem in
+            List(viewModel.foodList) { foodItem in
                 FoodListCell(foodItem: foodItem)
             }
-            .listStyle(.plain)
-           .navigationTitle("🍟 Food-Mela")
+                .listStyle(.plain)
+                .navigationTitle("🍟 Food-Mela")
+        }
+        .onAppear {
+            viewModel.getFoodList()
         }
     }
 }

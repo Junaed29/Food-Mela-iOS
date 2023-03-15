@@ -19,6 +19,7 @@
 		E4E7894729C17607001F88E9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894629C17607001F88E9 /* NetworkError.swift */; };
 		E4E7894929C17626001F88E9 /* UrlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894829C17626001F88E9 /* UrlConstant.swift */; };
 		E4E7894B29C198B5001F88E9 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894A29C198B5001F88E9 /* FoodListCell.swift */; };
+		E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E4E7894629C17607001F88E9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E4E7894829C17626001F88E9 /* UrlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConstant.swift; sourceTree = "<group>"; };
 		E4E7894A29C198B5001F88E9 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
+		E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMelaListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */,
 				E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */,
 				E477C76429BF6F2300467B6C /* FoodMelaListView.swift */,
+				E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */,
 				E4E7894A29C198B5001F88E9 /* FoodListCell.swift */,
 				E4E7894129C0564F001F88E9 /* FoodItem.swift */,
 				E477C76629BF6F4200467B6C /* AccountView.swift */,
@@ -177,6 +180,7 @@
 				E477C75729BF6D5C00467B6C /* Food_Mela_iOSApp.swift in Sources */,
 				E4E7894929C17626001F88E9 /* UrlConstant.swift in Sources */,
 				E4E7894229C0564F001F88E9 /* FoodItem.swift in Sources */,
+				E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */,
 				E477C76929BF6F5200467B6C /* OrderView.swift in Sources */,
 				E4E7894B29C198B5001F88E9 /* FoodListCell.swift in Sources */,
 			);

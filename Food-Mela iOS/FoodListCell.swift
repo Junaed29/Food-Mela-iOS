@@ -22,6 +22,9 @@ struct FoodListCell: View {
                 Text(foodItem.name)
                     .font(.title2)
                     .fontWeight(.medium)
+                    //.scaledToFit()
+                    //.minimumScaleFactor(0.6)
+                    
                 
                 Text("$\(foodItem.price, specifier: "%.2f")")
                     .foregroundColor(.secondary)

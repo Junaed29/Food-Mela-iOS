@@ -9,9 +9,12 @@ import SwiftUI
 
 struct FoodMelaListView: View {
     var body: some View {
-        NavigationView{
-            Text("Hello, List View!")
-                .navigationTitle("🍟 Food-Mela")
+        NavigationView {
+            List(FoodListResponseMockData.detaItemList) { foodItem in
+                FoodListCell(foodItem: foodItem)
+            }
+            .listStyle(.plain)
+           .navigationTitle("🍟 Food-Mela")
         }
     }
 }

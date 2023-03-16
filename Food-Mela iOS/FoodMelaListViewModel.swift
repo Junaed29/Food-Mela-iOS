@@ -12,11 +12,11 @@ final class FoodMelaListViewModel: ObservableObject {
     @Published var foodList: [FoodItem] = []
     @Published var alermItem: AlertItem?
     @Published var isLoading = true
-
+    
     func getFoodList() {
         isLoading = true
         
-        NetworkManager.getRequest(urlString: UrlConstant.GET_FOOD_LIST, respnseType: FoodListResponse.self) { result in
+        NetworkManager.shared.getRequest(urlString: UrlConstant.GET_FOOD_LIST, respnseType: FoodListResponse.self) { result in
             DispatchQueue.main.async {
                 self.isLoading = false
                 

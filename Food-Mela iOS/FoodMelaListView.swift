@@ -9,11 +9,10 @@ import SwiftUI
 
 struct FoodMelaListView: View {
     @StateObject var viewModel = FoodMelaListViewModel()
-
+    
     var body: some View {
         ZStack {
             NavigationView {
-
                 List(viewModel.foodList) { foodItem in
                     FoodListCell(foodItem: foodItem)
                 }
@@ -23,9 +22,9 @@ struct FoodMelaListView: View {
             .onAppear {
                 viewModel.getFoodList()
             }
-
+            
             if viewModel.isLoading{
-                CirculerLoadingView()
+                LoadingIndicator()
             }
         }
         .alert(item: $viewModel.alermItem) { alertitem in

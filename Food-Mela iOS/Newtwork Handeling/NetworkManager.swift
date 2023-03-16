@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct NetworkManager {
+    static let shared = NetworkManager()
+    private init(){}
+    
+    let cache = NSCache<NSString, UIImage>()
 
-    static func postRequest<T: Decodable>(urlString: String, params: [String: Any], respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkErrors>) -> Void) {
+    func postRequest<T: Decodable>(urlString: String, params: [String: Any], respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkErrors>) -> Void) {
 
         guard let removedSpaceURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)//This will fill the spaces with the %20
             else {
@@ -68,7 +73,7 @@ struct NetworkManager {
     }
 
 
-    static func getRequest<T: Decodable>(urlString: String, respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkErrors>) -> Void) {
+    func getRequest<T: Decodable>(urlString: String, respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkErrors>) -> Void) {
 
         guard let removedSpaceURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)//This will fill the spaces with the %20
             else {
@@ -111,6 +116,34 @@ struct NetworkManager {
             
         }.resume()
 
+    }
+    
+    
+    func downloadImage(fromURLString urlString: String, completed: @escaping(UIImage?) -> Void ){
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey){
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
+        
+        URLSession.shared.dataTask(with: URLRequest(url: url)) { (data, response, error) in
+            
+            guard let data = data, let image = UIImage(data: data) else{
+                completed(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            
+            completed(image)
+            
+        }.resume()
     }
 
 }

@@ -16,6 +16,7 @@
 		E477C76929BF6F5200467B6C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C76829BF6F5200467B6C /* OrderView.swift */; };
 		E49DBD9929C3327D000E70F9 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */; };
 		E49DBD9B29C334F0000E70F9 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */; };
+		E49DBD9D29C3487F000E70F9 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */; };
 		E4E7894229C0564F001F88E9 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894129C0564F001F88E9 /* FoodItem.swift */; };
 		E4E7894529C175CC001F88E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894429C175CC001F88E9 /* NetworkManager.swift */; };
 		E4E7894729C17607001F88E9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894629C17607001F88E9 /* NetworkError.swift */; };
@@ -36,6 +37,7 @@
 		E477C76829BF6F5200467B6C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E4E7894129C0564F001F88E9 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		E4E7894429C175CC001F88E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E4E7894629C17607001F88E9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */,
 				E477C75C29BF6D5E00467B6C /* Preview Content */,
 				E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */,
+				E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */,
 			);
 			path = "Food-Mela iOS";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				E477C76729BF6F4200467B6C /* AccountView.swift in Sources */,
 				E49DBD9B29C334F0000E70F9 /* Color+Ext.swift in Sources */,
 				E4E7895029C2064B001F88E9 /* AlertItem.swift in Sources */,
+				E49DBD9D29C3487F000E70F9 /* RemoteImage.swift in Sources */,
 				E4E7894729C17607001F88E9 /* NetworkError.swift in Sources */,
 				E49DBD9929C3327D000E70F9 /* ActivityIndicator.swift in Sources */,
 				E477C76529BF6F2300467B6C /* FoodMelaListView.swift in Sources */,

@@ -18,7 +18,7 @@ struct ActivityIndicator: UIViewRepresentable {
     func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
 }
 
-struct CirculerLoadingView: View {
+struct LoadingIndicator: View {
     var body: some View{
         ZStack {
             Color(.systemBackground)
@@ -33,6 +33,6 @@ struct CirculerLoadingView: View {
 
 struct CirculerLoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        CirculerLoadingView()
+        LoadingIndicator()
     }
 }

@@ -11,26 +11,31 @@ struct FoodListCell: View {
     let foodItem: FoodItem
     
     var body: some View {
-        HStack() {
-            Image("asian-flank-steak")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 90)
-                .cornerRadius(8)
+        ZStack(alignment: .bottomLeading) {
             
-            VStack(alignment: .leading, spacing: 5) {
-                Text(foodItem.name)
-                    .font(.title2)
-                    .fontWeight(.medium)
+            Text("Junaed")
+            
+            HStack() {
+                Image("asian-flank-steak")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(8)
+                
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(foodItem.name)
+                        .font(.title2)
+                        .fontWeight(.medium)
                     //.scaledToFit()
                     //.minimumScaleFactor(0.6)
                     
-                
-                Text("$\(foodItem.price, specifier: "%.2f")")
-                    .foregroundColor(.secondary)
-                    .fontWeight(.semibold)
+                    
+                    Text("$\(foodItem.price, specifier: "%.2f")")
+                        .foregroundColor(.secondary)
+                        .fontWeight(.semibold)
+                }
+                .padding(.leading)
             }
-            .padding(.leading)
         }
     }
 }

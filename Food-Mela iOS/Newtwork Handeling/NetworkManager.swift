@@ -10,7 +10,7 @@ import Foundation
 
 struct NetworkManager {
 
-    static func postRequest<T: Decodable>(urlString: String, params: [String: Any], respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkError>) -> Void) {
+    static func postRequest<T: Decodable>(urlString: String, params: [String: Any], respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkErrors>) -> Void) {
 
         guard let removedSpaceURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)//This will fill the spaces with the %20
             else {
@@ -68,7 +68,7 @@ struct NetworkManager {
     }
 
 
-    static func getRequest<T: Decodable>(urlString: String, respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkError>) -> Void) {
+    static func getRequest<T: Decodable>(urlString: String, respnseType: T.Type, completionHandler: @escaping(Result<T, NetworkErrors>) -> Void) {
 
         guard let removedSpaceURL = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)//This will fill the spaces with the %20
             else {

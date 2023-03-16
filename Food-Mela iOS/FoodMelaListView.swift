@@ -11,21 +11,24 @@ struct FoodMelaListView: View {
     @StateObject var viewModel = FoodMelaListViewModel()
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                if viewModel.isLoading {
-                    ProgressView().scaleEffect(2)
-                } else {
-                    List(viewModel.foodList) { foodItem in
-                        FoodListCell(foodItem: foodItem)
-                    }.listStyle(.plain)
+        ZStack {
+            NavigationView {
+
+                List(viewModel.foodList) { foodItem in
+                    FoodListCell(foodItem: foodItem)
                 }
-            }.navigationTitle("🍟 Food-Mela")
+                .listStyle(.plain)
+                .navigationTitle("🍟 Food-Mela")
+            }
+            .onAppear {
+                viewModel.getFoodList()
+            }
 
-        }.onAppear {
-            viewModel.getFoodList()
-
-        }.alert(item: $viewModel.alermItem) { alertitem in
+            if viewModel.isLoading{
+                CirculerLoadingView()
+            }
+        }
+        .alert(item: $viewModel.alermItem) { alertitem in
             Alert(title: alertitem.title, message: alertitem.message, dismissButton: alertitem.dismissButton)
         }
     }

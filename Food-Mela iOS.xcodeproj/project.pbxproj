@@ -77,21 +77,14 @@
 		E477C75529BF6D5C00467B6C /* Food-Mela iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E49DBDA529C3501A000E70F9 /* Model */,
 				E4E7894E29C2061C001F88E9 /* Utilities */,
-				E4E7894329C1759C001F88E9 /* Newtwork Handeling */,
+				E4E7894329C1759C001F88E9 /* Newtwork Manager */,
+				E49DBDA629C35051000E70F9 /* Views */,
+				E49DBD9E29C34EE7000E70F9 /* Screens */,
 				E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */,
-				E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */,
-				E477C76429BF6F2300467B6C /* FoodMelaListView.swift */,
-				E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */,
-				E4E7894A29C198B5001F88E9 /* FoodListCell.swift */,
-				E4E7894129C0564F001F88E9 /* FoodItem.swift */,
-				E477C76629BF6F4200467B6C /* AccountView.swift */,
-				E477C76829BF6F5200467B6C /* OrderView.swift */,
 				E477C75A29BF6D5E00467B6C /* Assets.xcassets */,
-				E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */,
 				E477C75C29BF6D5E00467B6C /* Preview Content */,
-				E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */,
-				E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */,
 			);
 			path = "Food-Mela iOS";
 			sourceTree = "<group>";
@@ -104,20 +97,115 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E4E7894329C1759C001F88E9 /* Newtwork Handeling */ = {
+		E49DBD9E29C34EE7000E70F9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */,
+				E49DBDA029C34F05000E70F9 /* AccountView */,
+				E49DBD9F29C34EF8000E70F9 /* FoodListView */,
+				E49DBDA129C34F0D000E70F9 /* OrderView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E49DBD9F29C34EF8000E70F9 /* FoodListView */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */,
+				E477C76429BF6F2300467B6C /* FoodMelaListView.swift */,
+			);
+			path = FoodListView;
+			sourceTree = "<group>";
+		};
+		E49DBDA029C34F05000E70F9 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				E477C76629BF6F4200467B6C /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		E49DBDA129C34F0D000E70F9 /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				E477C76829BF6F5200467B6C /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		E49DBDA329C34F87000E70F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E49DBDA429C34FA5000E70F9 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7894F29C2064B001F88E9 /* AlertItem.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		E49DBDA529C3501A000E70F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7894129C0564F001F88E9 /* FoodItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E49DBDA629C35051000E70F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E49DBDA929C350A5000E70F9 /* Image */,
+				E49DBDA829C3509A000E70F9 /* Cells */,
+				E49DBDA729C3505E000E70F9 /* UIKit Component */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E49DBDA729C3505E000E70F9 /* UIKit Component */ = {
+			isa = PBXGroup;
+			children = (
+				E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */,
+			);
+			path = "UIKit Component";
+			sourceTree = "<group>";
+		};
+		E49DBDA829C3509A000E70F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E4E7894A29C198B5001F88E9 /* FoodListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E49DBDA929C350A5000E70F9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E4E7894329C1759C001F88E9 /* Newtwork Manager */ = {
 			isa = PBXGroup;
 			children = (
 				E4E7894429C175CC001F88E9 /* NetworkManager.swift */,
 				E4E7894629C17607001F88E9 /* NetworkError.swift */,
 				E4E7894829C17626001F88E9 /* UrlConstant.swift */,
 			);
-			path = "Newtwork Handeling";
+			path = "Newtwork Manager";
 			sourceTree = "<group>";
 		};
 		E4E7894E29C2061C001F88E9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				E4E7894F29C2064B001F88E9 /* AlertItem.swift */,
+				E49DBDA329C34F87000E70F9 /* Extensions */,
+				E49DBDA429C34FA5000E70F9 /* Alerts */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

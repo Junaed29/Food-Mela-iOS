@@ -41,7 +41,7 @@ struct FoodListResponse: Decodable {
 
 
 struct FoodListResponseMockData {
-    static let detaItem = FoodItem(id: 12, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", protein: 14, price: 8.99, calories: 300, imageURL: "", carbs: 3)
+    static let detaItem = FoodItem(id: 12, name: "Asian Flank Steak", description: "This perfectly thin cut just melts in your mouth.", protein: 14, price: 8.99, calories: 300, imageURL: "https://api.vip.foodnetwork.ca/wp-content/uploads/2022/01/FNC_OGImage_Taiwanese-Beef-Noodle-Soup.jpg", carbs: 3)
 
     static let detaItemList = [detaItem, detaItem, detaItem, detaItem, detaItem, detaItem, detaItem]
 }

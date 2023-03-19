@@ -14,13 +14,22 @@ struct FoodMelaListView: View {
         ZStack {
             NavigationView {
                 List(viewModel.foodList) { foodItem in
-                    FoodListCell(foodItem: foodItem)
+                    FoodListCell(foodItem: foodItem).onTapGesture {
+                        viewModel.selectedFoodItem = foodItem
+                        viewModel.isShowingDetailsView = true
+                    }
                 }
                 .listStyle(.plain)
                 .navigationTitle("🍟 Food-Mela")
+                .disabled(viewModel.isShowingDetailsView)
             }
+            .blur(radius: viewModel.isShowingDetailsView ? 20 : 0)
             .onAppear {
                 viewModel.getFoodList()
+            }
+            
+            if viewModel.isShowingDetailsView{
+                FoodDetailView(foodItem: viewModel.selectedFoodItem!, isShowingDetailsView: $viewModel.isShowingDetailsView)
             }
             
             if viewModel.isLoading{

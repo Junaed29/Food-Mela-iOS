@@ -12,6 +12,8 @@ final class FoodMelaListViewModel: ObservableObject {
     @Published var foodList: [FoodItem] = []
     @Published var alermItem: AlertItem?
     @Published var isLoading = true
+    @Published var selectedFoodItem : FoodItem?
+    @Published var isShowingDetailsView = false
     
     func getFoodList() {
         isLoading = true

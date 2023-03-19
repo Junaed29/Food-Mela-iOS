@@ -33,6 +33,7 @@ struct RemoteImage: View {
 }
 
 
+//Main ImageView
 struct FoodListRemoteImage: View {
     var urlString: String
     @StateObject var imageLoader = ImageLoader()

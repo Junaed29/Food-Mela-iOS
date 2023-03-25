@@ -13,7 +13,7 @@ struct FoodListCell: View {
     var body: some View {
         HStack() {
             FoodListRemoteImage(urlString: foodItem.imageURL)
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
             

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Food_Mela_iOSApp: App {
+    var order = Order()
+    
     var body: some Scene {
         WindowGroup {
-            FoodMelaTabView()
+            FoodMelaTabView().environmentObject(order)
         }
     }
 }

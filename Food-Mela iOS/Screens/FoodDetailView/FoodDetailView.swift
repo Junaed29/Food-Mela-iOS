@@ -11,6 +11,7 @@ struct FoodDetailView: View {
     
     let foodItem : FoodItem
     @Binding var isShowingDetailsView: Bool
+    @EnvironmentObject var order: Order
     
     var body: some View {
         
@@ -41,7 +42,8 @@ struct FoodDetailView: View {
             Spacer()
             
             Button {
-                
+                order.addItem(foodItem)
+                isShowingDetailsView = false
             } label: {
                 FoodButtonView(title: "$\(foodItem.price, specifier: "%.2f") - Add To Order")
             }

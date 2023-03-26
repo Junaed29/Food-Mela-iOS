@@ -22,11 +22,17 @@ struct OrderView: View {
                     }
                     .listStyle(.plain)
                     
-                    Button {
+//                    Button {
+//
+//                    } label: {
+//                        FoodButtonView(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
+//                    }
+                    
+                    Button("$\(order.totalPrice, specifier: "%.2f") - Place Order") {
                         
-                    } label: {
-                        FoodButtonView(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     }
+                    .modifier(StandardButtonStyle())
+                    .padding(.bottom, 10)
                 }
                 if order.orderItems.isEmpty{
                     EmptyState(imageName: "invoice", title: "You have no items in your order. \nPlease add Food items!")

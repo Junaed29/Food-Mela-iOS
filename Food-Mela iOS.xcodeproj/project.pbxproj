@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40B069B29D05A2900F42C15 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B069A29D05A2900F42C15 /* CustomModifiers.swift */; };
 		E43AD73129CDFCC500CDB53C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73029CDFCC500CDB53C /* Order.swift */; };
 		E43AD73429CE21B400CDB53C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73329CE21B400CDB53C /* EmptyState.swift */; };
 		E46F9A9029C40B83004AA22A /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F9A8F29C40B83004AA22A /* FoodDetailView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E40B069A29D05A2900F42C15 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		E43AD73029CDFCC500CDB53C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		E43AD73329CE21B400CDB53C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		E46F9A8F29C40B83004AA22A /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				E49DBDA929C350A5000E70F9 /* Image */,
 				E49DBDA829C3509A000E70F9 /* Cells */,
 				E49DBDA729C3505E000E70F9 /* UIKit Component */,
+				E40B069A29D05A2900F42C15 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				E477C76929BF6F5200467B6C /* OrderView.swift in Sources */,
 				E4A0AADA29C779FA002F6695 /* FoodButtonView.swift in Sources */,
 				E48F3B1F29C8B091003AE4AC /* String+Ext.swift in Sources */,
+				E40B069B29D05A2900F42C15 /* CustomModifiers.swift in Sources */,
 				E4E7894B29C198B5001F88E9 /* FoodListCell.swift in Sources */,
 				E4A2BA6A29C9F2350094A288 /* User.swift in Sources */,
 			);

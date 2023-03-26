@@ -41,13 +41,21 @@ struct FoodDetailView: View {
             
             Spacer()
             
-            Button {
+//            Button {
+//                order.addItem(foodItem)
+//                isShowingDetailsView = false
+//            } label: {
+//                FoodButtonView(title: "$\(foodItem.price, specifier: "%.2f") - Add To Order")
+//            }
+//            .padding(.bottom, 30)
+            
+            Button("$\(foodItem.price, specifier: "%.2f") - Add To Order") {
                 order.addItem(foodItem)
                 isShowingDetailsView = false
-            } label: {
-                FoodButtonView(title: "$\(foodItem.price, specifier: "%.2f") - Add To Order")
             }
+            .modifier(StandardButtonStyle())
             .padding(.bottom, 30)
+            
         }
         .frame(width: 300 , height: 525)
         .background(Color(.systemBackground))

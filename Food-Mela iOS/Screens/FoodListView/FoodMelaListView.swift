@@ -14,10 +14,13 @@ struct FoodMelaListView: View {
         ZStack {
             NavigationView {
                 List(viewModel.foodList) { foodItem in
-                    FoodListCell(foodItem: foodItem).onTapGesture {
-                        viewModel.selectedFoodItem = foodItem
-                        viewModel.isShowingDetailsView = true
-                    }
+                    FoodListCell(foodItem: foodItem)
+                        .listRowSeparator(.hidden)
+//                        .listRowSeparatorTint(.brandPrimary)
+                        .onTapGesture {
+                            viewModel.selectedFoodItem = foodItem
+                            viewModel.isShowingDetailsView = true
+                        }
                 }
                 .listStyle(.plain)
                 .navigationTitle("🍟 Food-Mela")

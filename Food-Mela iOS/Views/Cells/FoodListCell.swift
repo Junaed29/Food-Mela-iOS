@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
 
 struct FoodListCell: View {
     let foodItem: FoodItem
@@ -16,6 +17,16 @@ struct FoodListCell: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
+            
+            //            AsyncImage(url: URL(string: foodItem.imageURL)) { image in
+            //                image.resizable()
+            //            } placeholder: {
+            //                Image("food_placeholder").resizable()
+            //            }
+            //            .aspectRatio(contentMode: .fill)
+            //            .frame(width: 120, height: 90)
+            //            .cornerRadius(8)
+            
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(foodItem.name)

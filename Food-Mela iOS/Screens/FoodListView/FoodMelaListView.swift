@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct FoodMelaListView: View {
     @StateObject var viewModel = FoodMelaListViewModel()
+    @State var showToast = false
     
     var body: some View {
         ZStack {
@@ -27,12 +29,12 @@ struct FoodMelaListView: View {
                 .disabled(viewModel.isShowingDetailsView)
             }
             .blur(radius: viewModel.isShowingDetailsView ? 20 : 0)
-            .onAppear {
+            .task {
                 viewModel.getFoodList()
             }
             
             if viewModel.isShowingDetailsView{
-                FoodDetailView(foodItem: viewModel.selectedFoodItem!, isShowingDetailsView: $viewModel.isShowingDetailsView)
+                FoodDetailView(foodItem: viewModel.selectedFoodItem!, isShowingDetailsView: $viewModel.isShowingDetailsView, showToast: $showToast)
             }
             
             if viewModel.isLoading{
@@ -41,6 +43,9 @@ struct FoodMelaListView: View {
         }
         .alert(item: $viewModel.alermItem) { alertitem in
             Alert(title: alertitem.title, message: alertitem.message, dismissButton: alertitem.dismissButton)
+        }
+        .toast(isPresenting: $showToast){
+            AlertToast(displayMode: .banner(.pop), type: .regular, title: "\(viewModel.selectedFoodItem?.name ?? "No Item") added to Order List")
         }
     }
 }

@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import CachedAsyncImage
+import AlertToast
 
 struct FoodDetailView: View {
     
     let foodItem : FoodItem
     @Binding var isShowingDetailsView: Bool
     @EnvironmentObject var order: Order
+    @Binding var showToast: Bool
     
     var body: some View {
         
@@ -19,8 +22,14 @@ struct FoodDetailView: View {
         VStack{
             FoodListRemoteImage(urlString: foodItem.imageURL)
                 .aspectRatio(contentMode: .fill)
-                .frame(width: .infinity, height: 225)
-            
+                .frame(maxWidth: .infinity, maxHeight: 225)
+            //            AsyncImage(url: URL(string: foodItem.imageURL)) { image in
+            //                image.resizable()
+            //            } placeholder: {
+            //                Image("food_placeholder").resizable()
+            //            }
+            //            .aspectRatio(contentMode: .fill)
+            //            .frame(maxWidth: .infinity, maxHeight: 225)
             
             VStack{
                 Text(foodItem.name)
@@ -41,17 +50,18 @@ struct FoodDetailView: View {
             
             Spacer()
             
-//            Button {
-//                order.addItem(foodItem)
-//                isShowingDetailsView = false
-//            } label: {
-//                FoodButtonView(title: "$\(foodItem.price, specifier: "%.2f") - Add To Order")
-//            }
-//            .padding(.bottom, 30)
+            //            Button {
+            //                order.addItem(foodItem)
+            //                isShowingDetailsView = false
+            //            } label: {
+            //                FoodButtonView(title: "$\(foodItem.price, specifier: "%.2f") - Add To Order")
+            //            }
+            //            .padding(.bottom, 30)
             
             Button("$\(foodItem.price, specifier: "%.2f") - Add To Order") {
                 order.addItem(foodItem)
                 isShowingDetailsView = false
+                showToast = true
             }
             .modifier(StandardButtonStyle())
             .padding(.bottom, 30)
@@ -73,7 +83,7 @@ struct FoodDetailView: View {
 
 struct FoodDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodDetailView(foodItem: FoodListResponseMockData.detaItem, isShowingDetailsView: .constant(false))
+        FoodDetailView(foodItem: FoodListResponseMockData.detaItem, isShowingDetailsView: .constant(false), showToast: .constant(false))
     }
 }
 

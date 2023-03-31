@@ -12,7 +12,6 @@
 		E43AD73429CE21B400CDB53C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73329CE21B400CDB53C /* EmptyState.swift */; };
 		E4458EAE29D57A830040A695 /* NetworkManagerAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4458EAD29D57A830040A695 /* NetworkManagerAsync.swift */; };
 		E4458EB129D599900040A695 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = E4458EB029D599900040A695 /* AlertToast */; };
-		E4458EB429D599B90040A695 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = E4458EB329D599B90040A695 /* CachedAsyncImage */; };
 		E46F9A9029C40B83004AA22A /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F9A8F29C40B83004AA22A /* FoodDetailView.swift */; };
 		E477C75729BF6D5C00467B6C /* Food_Mela_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */; };
 		E477C75929BF6D5C00467B6C /* FoodMelaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C75829BF6D5C00467B6C /* FoodMelaTabView.swift */; };
@@ -75,7 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4458EB129D599900040A695 /* AlertToast in Frameworks */,
-				E4458EB429D599B90040A695 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +284,6 @@
 			name = "Food-Mela iOS";
 			packageProductDependencies = (
 				E4458EB029D599900040A695 /* AlertToast */,
-				E4458EB329D599B90040A695 /* CachedAsyncImage */,
 			);
 			productName = "Food-Mela iOS";
 			productReference = E477C75329BF6D5C00467B6C /* Food-Mela iOS.app */;
@@ -318,7 +315,6 @@
 			mainGroup = E477C74A29BF6D5B00467B6C;
 			packageReferences = (
 				E4458EAF29D599900040A695 /* XCRemoteSwiftPackageReference "AlertToast" */,
-				E4458EB229D599B90040A695 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = E477C75429BF6D5C00467B6C /* Products */;
 			projectDirPath = "";
@@ -581,14 +577,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		E4458EB229D599B90040A695 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -596,11 +584,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E4458EAF29D599900040A695 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
-		};
-		E4458EB329D599B90040A695 /* CachedAsyncImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E4458EB229D599B90040A695 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
-			productName = CachedAsyncImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

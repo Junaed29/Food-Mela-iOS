@@ -26,9 +26,10 @@ final class ImageLoader: ObservableObject{
 
 struct RemoteImage: View {
     var image: Image?
+    var placeHolderImageName: String
     
     var body: some View{
-        image?.resizable() ?? Image("food_placeholder").resizable()
+        image?.resizable() ?? Image(placeHolderImageName).resizable()
     }
 }
 
@@ -36,10 +37,11 @@ struct RemoteImage: View {
 //Main ImageView
 struct FoodListRemoteImage: View {
     var urlString: String
+    var placeHolderImageName: String
     @StateObject var imageLoader = ImageLoader()
     
     var body: some View{
-        RemoteImage(image: imageLoader.image).onAppear {
+        RemoteImage(image: imageLoader.image, placeHolderImageName: placeHolderImageName).onAppear {
             imageLoader.load(fromURLSting: urlString)
         }
     }

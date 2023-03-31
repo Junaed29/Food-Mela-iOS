@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CachedAsyncImage
 import AlertToast
 
 struct FoodDetailView: View {
@@ -20,7 +19,7 @@ struct FoodDetailView: View {
         
         
         VStack{
-            FoodListRemoteImage(urlString: foodItem.imageURL)
+            FoodListRemoteImage(urlString: foodItem.imageURL, placeHolderImageName: "food_placeholder")
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: .infinity, maxHeight: 225)
             //            AsyncImage(url: URL(string: foodItem.imageURL)) { image in

@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
-import CachedAsyncImage
 
 struct FoodListCell: View {
     let foodItem: FoodItem
     
     var body: some View {
         HStack() {
-            FoodListRemoteImage(urlString: foodItem.imageURL)
+            FoodListRemoteImage(urlString: foodItem.imageURL, placeHolderImageName: "food_placeholder")
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)

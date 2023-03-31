@@ -24,7 +24,10 @@ struct LoadingIndicator: View {
             Color(.systemBackground)
                 .ignoresSafeArea()
             
-            ActivityIndicator()
+            //ActivityIndicator()
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .brandPrimary))
+                .scaleEffect(2)
         }
     }
 }

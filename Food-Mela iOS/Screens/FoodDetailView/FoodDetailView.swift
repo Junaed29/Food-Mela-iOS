@@ -41,9 +41,9 @@ struct FoodDetailView: View {
                     .padding()
                 
                 HStack (spacing: 40) {
-                    NutrationInfoView(nutrationType: "Calories", nutrationValue: foodItem.calories)
-                    NutrationInfoView(nutrationType: "Carbs", nutrationValue: foodItem.carbs)
-                    NutrationInfoView(nutrationType: "Protein", nutrationValue: foodItem.protein)
+                    NutrationInfoView(nutrationType: "Calories", nutrationValue: "\(foodItem.calories)")
+                    NutrationInfoView(nutrationType: "Carbs", nutrationValue: "\(foodItem.carbs) g")
+                    NutrationInfoView(nutrationType: "Protein", nutrationValue: "\(foodItem.protein) g")
                 }
             }
             
@@ -90,7 +90,7 @@ struct FoodDetailView_Previews: PreviewProvider {
 
 struct NutrationInfoView: View {
     let nutrationType: String
-    let nutrationValue: Int
+    let nutrationValue: String
     
     var body: some View {
         VStack(spacing: 10) {
@@ -98,7 +98,7 @@ struct NutrationInfoView: View {
                 .bold()
                 .font(.caption)
             
-            Text("\(nutrationValue)")
+            Text(nutrationValue)
                 .fontWeight(.semibold)
                 .foregroundColor(.secondary)
                 .italic()

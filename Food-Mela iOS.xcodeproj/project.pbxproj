@@ -35,6 +35,7 @@
 		E4E7894B29C198B5001F88E9 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894A29C198B5001F88E9 /* FoodListCell.swift */; };
 		E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */; };
 		E4E7895029C2064B001F88E9 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894F29C2064B001F88E9 /* AlertItem.swift */; };
+		E4F2046529D74B2B0097FB16 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2046429D74B2B0097FB16 /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		E4E7894A29C198B5001F88E9 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
 		E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMelaListViewModel.swift; sourceTree = "<group>"; };
 		E4E7894F29C2064B001F88E9 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		E4F2046429D74B2B0097FB16 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */,
 				E48F3B1E29C8B091003AE4AC /* String+Ext.swift */,
+				E4F2046429D74B2B0097FB16 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				E48F3B1D29C8AB85003AE4AC /* AccountViewModel.swift in Sources */,
 				E477C75729BF6D5C00467B6C /* Food_Mela_iOSApp.swift in Sources */,
 				E4A0AADC29C77C04002F6695 /* XDismissButton.swift in Sources */,
+				E4F2046529D74B2B0097FB16 /* Date+Ext.swift in Sources */,
 				E4E7894929C17626001F88E9 /* UrlConstant.swift in Sources */,
 				E4E7894229C0564F001F88E9 /* FoodItem.swift in Sources */,
 				E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */,

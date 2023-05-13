@@ -21,9 +21,7 @@
 		E477C76729BF6F4200467B6C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C76629BF6F4200467B6C /* AccountView.swift */; };
 		E477C76929BF6F5200467B6C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477C76829BF6F5200467B6C /* OrderView.swift */; };
 		E48F3B1D29C8AB85003AE4AC /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B1C29C8AB85003AE4AC /* AccountViewModel.swift */; };
-		E48F3B1F29C8B091003AE4AC /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B1E29C8B091003AE4AC /* String+Ext.swift */; };
 		E49DBD9929C3327D000E70F9 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */; };
-		E49DBD9B29C334F0000E70F9 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */; };
 		E49DBD9D29C3487F000E70F9 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */; };
 		E4A0AADA29C779FA002F6695 /* FoodButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0AAD929C779FA002F6695 /* FoodButtonView.swift */; };
 		E4A0AADC29C77C04002F6695 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A0AADB29C77C04002F6695 /* XDismissButton.swift */; };
@@ -35,7 +33,9 @@
 		E4E7894B29C198B5001F88E9 /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894A29C198B5001F88E9 /* FoodListCell.swift */; };
 		E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */; };
 		E4E7895029C2064B001F88E9 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7894F29C2064B001F88E9 /* AlertItem.swift */; };
-		E4F2046529D74B2B0097FB16 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2046429D74B2B0097FB16 /* Date+Ext.swift */; };
+		E4FD193B2A0FCA8B00AE72BC /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD193A2A0FCA8B00AE72BC /* Date+Ext.swift */; };
+		E4FD193D2A0FCAB700AE72BC /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD193C2A0FCAB700AE72BC /* Color+Ext.swift */; };
+		E4FD193F2A0FCABE00AE72BC /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD193E2A0FCABE00AE72BC /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +53,7 @@
 		E477C76629BF6F4200467B6C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E477C76829BF6F5200467B6C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		E48F3B1C29C8AB85003AE4AC /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		E48F3B1E29C8B091003AE4AC /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E49DBD9829C3327D000E70F9 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		E49DBD9C29C3487E000E70F9 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E4A0AAD929C779FA002F6695 /* FoodButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodButtonView.swift; sourceTree = "<group>"; };
 		E4A0AADB29C77C04002F6695 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
@@ -67,7 +65,9 @@
 		E4E7894A29C198B5001F88E9 /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
 		E4E7894C29C1BE47001F88E9 /* FoodMelaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMelaListViewModel.swift; sourceTree = "<group>"; };
 		E4E7894F29C2064B001F88E9 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
-		E4F2046429D74B2B0097FB16 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		E4FD193A2A0FCA8B00AE72BC /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		E4FD193C2A0FCAB700AE72BC /* Color+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		E4FD193E2A0FCABE00AE72BC /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +178,9 @@
 		E49DBDA329C34F87000E70F9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E49DBD9A29C334F0000E70F9 /* Color+Ext.swift */,
-				E48F3B1E29C8B091003AE4AC /* String+Ext.swift */,
-				E4F2046429D74B2B0097FB16 /* Date+Ext.swift */,
+				E4FD193E2A0FCABE00AE72BC /* String+Ext.swift */,
+				E4FD193C2A0FCAB700AE72BC /* Color+Ext.swift */,
+				E4FD193A2A0FCA8B00AE72BC /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -347,7 +347,6 @@
 			files = (
 				E43AD73429CE21B400CDB53C /* EmptyState.swift in Sources */,
 				E477C76729BF6F4200467B6C /* AccountView.swift in Sources */,
-				E49DBD9B29C334F0000E70F9 /* Color+Ext.swift in Sources */,
 				E4E7895029C2064B001F88E9 /* AlertItem.swift in Sources */,
 				E49DBD9D29C3487F000E70F9 /* RemoteImage.swift in Sources */,
 				E43AD73129CDFCC500CDB53C /* Order.swift in Sources */,
@@ -360,14 +359,15 @@
 				E48F3B1D29C8AB85003AE4AC /* AccountViewModel.swift in Sources */,
 				E477C75729BF6D5C00467B6C /* Food_Mela_iOSApp.swift in Sources */,
 				E4A0AADC29C77C04002F6695 /* XDismissButton.swift in Sources */,
-				E4F2046529D74B2B0097FB16 /* Date+Ext.swift in Sources */,
+				E4FD193D2A0FCAB700AE72BC /* Color+Ext.swift in Sources */,
+				E4FD193B2A0FCA8B00AE72BC /* Date+Ext.swift in Sources */,
+				E4FD193F2A0FCABE00AE72BC /* String+Ext.swift in Sources */,
 				E4E7894929C17626001F88E9 /* UrlConstant.swift in Sources */,
 				E4E7894229C0564F001F88E9 /* FoodItem.swift in Sources */,
 				E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */,
 				E4458EAE29D57A830040A695 /* NetworkManagerAsync.swift in Sources */,
 				E477C76929BF6F5200467B6C /* OrderView.swift in Sources */,
 				E4A0AADA29C779FA002F6695 /* FoodButtonView.swift in Sources */,
-				E48F3B1F29C8B091003AE4AC /* String+Ext.swift in Sources */,
 				E40B069B29D05A2900F42C15 /* CustomModifiers.swift in Sources */,
 				E4E7894B29C198B5001F88E9 /* FoodListCell.swift in Sources */,
 				E4A2BA6A29C9F2350094A288 /* User.swift in Sources */,

@@ -119,7 +119,7 @@
 			children = (
 				E49DBDA529C3501A000E70F9 /* Model */,
 				E4E7894E29C2061C001F88E9 /* Utilities */,
-				E4E7894329C1759C001F88E9 /* Newtwork Manager */,
+				E4E7894329C1759C001F88E9 /* Network Manager */,
 				E49DBDA629C35051000E70F9 /* Views */,
 				E49DBD9E29C34EE7000E70F9 /* Screens */,
 				E477C75629BF6D5C00467B6C /* Food_Mela_iOSApp.swift */,
@@ -249,7 +249,7 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		E4E7894329C1759C001F88E9 /* Newtwork Manager */ = {
+		E4E7894329C1759C001F88E9 /* Network Manager */ = {
 			isa = PBXGroup;
 			children = (
 				E4E7894429C175CC001F88E9 /* NetworkManager.swift */,
@@ -257,7 +257,7 @@
 				E4E7894829C17626001F88E9 /* UrlConstant.swift */,
 				E4458EAD29D57A830040A695 /* NetworkManagerAsync.swift */,
 			);
-			path = "Newtwork Manager";
+			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 		E4E7894E29C2061C001F88E9 /* Utilities */ = {

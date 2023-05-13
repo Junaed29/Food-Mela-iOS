@@ -36,18 +36,18 @@ struct NetworkManager {
         request.setValue("application/json", forHTTPHeaderField: "Content-type")
 
 
-        request.httpBody = params.percentEscaped().data(using: .utf8)
-//            do {
-//                request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-//            } catch {
-//                completionHandler(.failure(error))
-//                return
-//            }
+        //request.httpBody = params.percentEscaped().data(using: .utf8)
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+        } catch {
+            completionHandler(.failure(.unableToComplete))
+            return
+        }
 
 
 
         URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let _ = error else {
+            if let _ = error {
                 completionHandler(.failure(.unableToComplete))
                 return
             }

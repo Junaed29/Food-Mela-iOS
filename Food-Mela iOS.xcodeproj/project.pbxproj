@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E40B069B29D05A2900F42C15 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B069A29D05A2900F42C15 /* CustomModifiers.swift */; };
+		E42A2F3D2A32387C004D9F40 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A2F3C2A32387C004D9F40 /* View+Ext.swift */; };
 		E43AD73129CDFCC500CDB53C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73029CDFCC500CDB53C /* Order.swift */; };
 		E43AD73429CE21B400CDB53C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73329CE21B400CDB53C /* EmptyState.swift */; };
 		E4458EAE29D57A830040A695 /* NetworkManagerAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4458EAD29D57A830040A695 /* NetworkManagerAsync.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		E40B069A29D05A2900F42C15 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		E42A2F3C2A32387C004D9F40 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		E43AD73029CDFCC500CDB53C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		E43AD73329CE21B400CDB53C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		E4458EAD29D57A830040A695 /* NetworkManagerAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAsync.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				E4FD193E2A0FCABE00AE72BC /* String+Ext.swift */,
 				E4FD193C2A0FCAB700AE72BC /* Color+Ext.swift */,
 				E4FD193A2A0FCA8B00AE72BC /* Date+Ext.swift */,
+				E42A2F3C2A32387C004D9F40 /* View+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				E43AD73429CE21B400CDB53C /* EmptyState.swift in Sources */,
 				E477C76729BF6F4200467B6C /* AccountView.swift in Sources */,
+				E42A2F3D2A32387C004D9F40 /* View+Ext.swift in Sources */,
 				E4E7895029C2064B001F88E9 /* AlertItem.swift in Sources */,
 				E49DBD9D29C3487F000E70F9 /* RemoteImage.swift in Sources */,
 				E43AD73129CDFCC500CDB53C /* Order.swift in Sources */,

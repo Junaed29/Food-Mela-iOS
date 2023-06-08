@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E40B069B29D05A2900F42C15 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40B069A29D05A2900F42C15 /* CustomModifiers.swift */; };
 		E42A2F3D2A32387C004D9F40 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A2F3C2A32387C004D9F40 /* View+Ext.swift */; };
+		E42A2F412A323988004D9F40 /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42A2F402A323988004D9F40 /* RoundedRectangleButton.swift */; };
 		E43AD73129CDFCC500CDB53C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73029CDFCC500CDB53C /* Order.swift */; };
 		E43AD73429CE21B400CDB53C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43AD73329CE21B400CDB53C /* EmptyState.swift */; };
 		E4458EAE29D57A830040A695 /* NetworkManagerAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4458EAD29D57A830040A695 /* NetworkManagerAsync.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		E40B069A29D05A2900F42C15 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		E42A2F3C2A32387C004D9F40 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		E42A2F402A323988004D9F40 /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
 		E43AD73029CDFCC500CDB53C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		E43AD73329CE21B400CDB53C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		E4458EAD29D57A830040A695 /* NetworkManagerAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAsync.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 			children = (
 				E4A0AAD929C779FA002F6695 /* FoodButtonView.swift */,
 				E4A0AADB29C77C04002F6695 /* XDismissButton.swift */,
+				E42A2F402A323988004D9F40 /* RoundedRectangleButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				E4E7894929C17626001F88E9 /* UrlConstant.swift in Sources */,
 				E4E7894229C0564F001F88E9 /* FoodItem.swift in Sources */,
 				E4E7894D29C1BE48001F88E9 /* FoodMelaListViewModel.swift in Sources */,
+				E42A2F412A323988004D9F40 /* RoundedRectangleButton.swift in Sources */,
 				E4458EAE29D57A830040A695 /* NetworkManagerAsync.swift in Sources */,
 				E477C76929BF6F5200467B6C /* OrderView.swift in Sources */,
 				E4A0AADA29C779FA002F6695 /* FoodButtonView.swift in Sources */,

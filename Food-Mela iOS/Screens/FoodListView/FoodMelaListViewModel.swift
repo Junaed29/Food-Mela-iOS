@@ -61,10 +61,12 @@ final class FoodMelaListViewModel: ObservableObject {
                         alermItem = AlertContext.invalidURL
                     case .invalidResponse:
                         alermItem = AlertContext.invalidResponse
-                    case .invalidDeta:
+                    case .invalidData:
                         alermItem = AlertContext.invalidData
                     case .unableToComplete:
                         alermItem = AlertContext.unableToComplete
+                    case .invalidRequest:
+                        alermItem = AlertContext.invalidRequest
                     }
                 }else{
                     alermItem = AlertContext.unableToComplete

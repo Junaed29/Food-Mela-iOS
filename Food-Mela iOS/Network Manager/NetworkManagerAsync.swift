@@ -23,7 +23,7 @@ struct NetworkManagerAsync {
         do {
             return try JSONDecoder().decode(respnseType, from: data)
         } catch {
-            throw NetworkErrors.invalidDeta
+            throw NetworkErrors.invalidData
         }
     }
 }
